@@ -12,7 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20180712224320) do
 
-# Could not dump table "articles" because of following StandardError
-#   Unknown type 'String' for column 'media_folder'
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.string "desc"
+    t.text "content"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.date "publish_date"
+    t.string "media_folder"
+  end
 
 end
