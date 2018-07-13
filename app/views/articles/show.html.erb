@@ -1,34 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<p>
-  <strong>Desc:</strong>
-  <%= @article.desc %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @article.image %>
-</p>
-
-<p>
-  <strong>Publish Date:</strong>
-  <%= @article.publish_date %>
-</p>
-
-<p>
-  <strong>Media Folder:</strong>
-  <%= @article.media_folder %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<div class="row" id="articles">
+	<div class="col-lg-6" id="body">
+		<div class="panel panel-default article">
+			<div class="panel-heading">
+				<h1 class="panel-title"><%= @article.title %></h1>
+				<h2>Published on <%= @article.publish_date.strftime("%b %e, %Y") %></h2>
+			</div>
+			<div class="panel-body">
+				<%= image_tag("articles/" + @article.media_folder + "/" + @article.image, alt:"System Remnant article") %>
+				<p><%= @article.desc %></p>
+				<%= @article.content.html_safe %>
+			</div>
+		</div>
+	</div>
+</div>
