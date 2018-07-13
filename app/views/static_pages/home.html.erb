@@ -7,7 +7,11 @@
 <div class="row" id="articles">
     <div class="col-lg-6" id="body">
     	<% @articles.order('publish_date DESC').each do |article| %>
-    	    <%= render 'article', article: article %>
+    	    <%= 
+    	    if !article.publish_date.future?
+    	    	render 'article', article: article
+    	    end
+    	    %>
     	<% end %>
 	</div>
 </div>
