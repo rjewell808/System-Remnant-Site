@@ -1,0 +1,44 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#article_new {
+  #form {
+    margin: auto;
+    float: none;
+    
+    .btn {
+      width: 100%;
+    }
+    
+    #input-title input{
+      background-color: rgba(0, 0, 0, 0);
+      color: #A483C2;
+      height: 90px;
+      font-size: 32pt;
+      font-weight: bold;
+      border-width: 0px;
+      border-radius: 0px;
+      border-bottom: 5px white solid;
+      box-shadow: none;
+      
+    }
+    
+    #input-title input::placeholder {
+      color: #d6c1e8;
+      opacity: 0.5;
+    }
+    
+    .triple-form {
+      padding: 0 10px;
+      
+      div {
+        padding: 0px 3px;
+      }
+    }
+    
+    textarea {
+      resize: vertical;
+    }
+  }
+}

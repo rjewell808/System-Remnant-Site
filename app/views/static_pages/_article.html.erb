@@ -1,0 +1,13 @@
+<div class="panel panel-default article">
+  <div class="panel-heading">
+    <h1 class="panel-title">
+      <%= link_to article.title, article %>
+    </h1>
+	  <h2>Published on <%= article.publish_date.strftime("%b %e, %Y") %></h2>
+  </div>
+  <div class="panel-body">
+    <%= image_tag("articles/" + article.media_folder + "/" + article.image, alt:"System Remnant article") %>
+  	<p><%= article.desc %></p>
+  	<%= link_to "Read more...", article %>
+  </div>
+</div>

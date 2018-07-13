@@ -1,0 +1,58 @@
+<div class="row" id="article_new">
+  <%= form_with(model: article, local: true) do |form| %>
+    <% if article.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
+  
+        <ul>
+        <% article.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="col-lg-6" id="form">
+      <form>
+        <div class="form-group" id="input-title">
+          <input type="text" class="form-control" id="<%= :article_title %>" placeholder="Title" name="article[title]" value="<%= article.title %>">
+        </div>
+        <div class="row triple-form">
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="<%= :article_image %>">Cover Image</label>
+              <input type="text" class="form-control" id="<%= :article_image %>" placeholder="Image File Name" name="article[image]" value="<%= article.image %>">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="<%= :article_publish_date %>">Publish Date</label>
+              <input type="date" class="form-control" id="<%= :article_publish_date %>" placeholder="Publish Date" name="article[publish_date]" value="<%= article.publish_date %>">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="form-group">
+              <label for="<%= :article_media_folder %>">Media Folder</label>
+              <input type="text" class="form-control" id="<%= :article_media_folder %>" placeholder="Media Folder" name="article[media_folder]" value="<%= article.media_folder %>">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="<%= :article_desc %>">Description</label>
+          <input type="text" class="form-control" id="<%= :article_desc %>" placeholder="Desc" name="article[desc]" value="<%= article.desc %>">
+        </div>
+        <div class="form-group">
+          <label for="<%= :article_content %>">Content</label>
+          <textarea type="text" rows="10" class="form-control" id="<%= :article_content %>" placeholder="Content" name="article[content]" value="<%= article.content %>"></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-success" name="commit">Submit</button>
+        </div>
+        
+        <%= link_to 'Back', articles_path %>
+        
+      </form>
+    </div>
+  
+  <% end %>
+</div>
+

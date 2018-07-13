@@ -1,0 +1,60 @@
+#article{
+	margin-top: 20px;
+}
+
+#article #body{
+	margin: auto;
+	float: none;
+}
+
+.article{
+	background-color: transparent !important;
+	border-radius: 0px;
+	border: 0px;
+	box-shadow: 0 0 0px rgba(0,0,0,.05) !important;
+}
+
+.article .panel-heading{
+	background-color: transparent !important;
+	border-bottom: 0px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+
+.article .panel-body{
+	background-color: #2C2235;
+}
+
+.article a{
+	color: #A483C2;
+}
+
+.article a:hover{
+	color: white;
+}
+
+.article h1{
+	font-weight: bold;
+	font-size: 32pt;
+	margin-bottom: 10px;
+}
+
+.article h2{
+	font-size: 12pt;
+	color: white;
+	margin: 0;
+}
+
+.article img{
+	width: 100%;
+	padding: 15px;
+}
+
+.article p{
+	padding: 15px;
+	margin: 0;
+}
+
+.article .read-more-link{
+	padding-left: 15px;
+}

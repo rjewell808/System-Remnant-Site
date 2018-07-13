@@ -1,0 +1,33 @@
+body{
+	background-color: #433251; 
+	background-image: asset-data-url("stars.png");
+	
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a{
+	color: #A483C2;
+}
+
+a:hover{
+	color: white;
+}
+
+#main-content{
+	margin-top: 52px;
+}
+
+#footer{
+	text-align: center;
+	background-color: #181423;
+	padding: 10px 0px;
+}
+
+#footer p{
+	margin: 0;
+}
+
+.center{
+	text-align: center;
+}
