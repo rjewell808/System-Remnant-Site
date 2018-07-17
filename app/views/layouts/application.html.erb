@@ -56,7 +56,15 @@
     </div><!-- /.container-fluid -->
     </nav>
     
+    <%= render 'static_pages/admin_header' %> 
+
     <div class="container-fluid" id="main-content">
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
       <%= yield %>
     </div>
   	

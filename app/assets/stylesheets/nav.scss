@@ -97,3 +97,16 @@ nav .container-fluid{
 		padding: 0px 10px;
 	}
 }
+
+#admin-nav {
+	margin-top: 50px;
+	background-color: #b93b3b;
+
+	.navbar-nav>li>a:hover{
+		background-color: #e65c5c;
+	}
+
+	a {
+		color: white;	
+	}
+}

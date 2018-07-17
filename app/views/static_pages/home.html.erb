@@ -8,7 +8,7 @@
     <div class="col-lg-6" id="body">
     	<% @articles.order('publish_date DESC').each do |article| %>
     	    <%= 
-    	    if !article.publish_date.future?
+    	    if article.isShowing
     	    	render 'article', article: article
     	    end
     	    %>

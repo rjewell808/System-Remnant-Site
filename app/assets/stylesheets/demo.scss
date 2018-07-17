@@ -1,0 +1,67 @@
+#demo #body{
+	float: none;
+	margin: auto;
+	background-color: #2C2235;
+	border-radius: 4px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#demo img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#demo h1{
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+#demo ol li{
+	text-align: left;
+}
+
+#demo .btn-full{
+	width: 80%;
+	display: block;
+	margin: auto;	
+}
+
+#demo .btn{
+	background-color: transparent;
+	color: #F6B542;
+	border-color: #F6B542;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#demo .btn-default:hover{
+	background-color: #F6B542;
+	color: #2C2235;
+}
+
+.center{
+	text-align: center;
+}
+
+#demo #body .table{
+	margin-top: 10px;
+	text-align: left;
+}
+
+#demo #body th{
+	background-color: white;
+	color: #2C2235;
+}
+
+#demo .panel{
+	color: black;
+}
+
+#demo .panel pre{
+	text-align: left;
+}
+
+#demo h4 {
+	color: #b93b3b;
+}

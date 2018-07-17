@@ -1,0 +1,52 @@
+#banner img{
+	width: 33.3%;
+	float: left;
+}
+
+#about-game, #about-team, #about-specs{
+	margin-bottom: 20px;
+}
+
+#about-game .body, #about-team .body, #about-specs .body{
+	float: none;
+	margin: auto;
+	background-color: #2C2235;
+	border-radius: 4px;
+}
+
+#about-game .body .row, #about-team .body .row, #about-specs .body .row{
+	padding: 0px 15px;
+}
+
+#about-game .body #features-list{
+	padding: 0px;
+	text-align: center;
+}
+
+
+#about-game p #about-team p{
+	font-size: 14pt;
+}
+
+#about-game h2
+{
+	text-align: center;
+	color: #d1b9e8;
+}
+
+#about-specs .table-hover>tbody>tr:hover{
+	background-color: #3b3244;
+}
+
+#excite{
+	text-align: center;
+	color: #d1b9e8;
+	margin-bottom: 30px;
+}
+
+@media(max-width: 1455px)
+{
+	#about-game h2{
+		font-size: 175%;
+	}
+}

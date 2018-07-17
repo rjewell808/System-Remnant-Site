@@ -1,17 +1,21 @@
-<p id="notice"><%= notice %></p>
+<% if user_signed_in? or @article.isShowing %>
+	<p id="notice"><%= notice %></p>
 
-<div class="row" id="articles">
-	<div class="col-lg-6" id="body">
-		<div class="panel panel-default article">
-			<div class="panel-heading">
-				<h1 class="panel-title"><%= @article.title %></h1>
-				<h2>Published on <%= @article.publish_date.strftime("%b %e, %Y") %></h2>
-			</div>
-			<div class="panel-body">
-				<%= image_tag("articles/" + @article.media_folder + "/" + @article.image, alt:"System Remnant article") %>
-				<p><%= @article.desc %></p>
-				<%= @article.content.html_safe %>
+	<div class="row" id="articles">
+		<div class="col-lg-6" id="body">
+			<div class="panel panel-default article">
+				<div class="panel-heading">
+					<h1 class="panel-title"><%= @article.title %></h1>
+					<h2>Published on <%= @article.publish_date.strftime("%b %e, %Y") %></h2>
+				</div>
+				<div class="panel-body">
+					<%= image_tag("articles/" + @article.media_folder + "/" + @article.image, alt:"System Remnant article") %>
+					<p><%= @article.desc %></p>
+					<%= render 'articles/content/' + @article.media_folder + ".html.erb" %>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<% else %>
+	<h1>Come back later!</h1>
+<% end %>
