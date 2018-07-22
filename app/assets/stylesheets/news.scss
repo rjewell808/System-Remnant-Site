@@ -127,3 +127,32 @@
 	width:100%;
 	height:100%;
 }
+
+.article .module-panels {
+	display: flex;
+
+	.panel {
+		height: 100%;
+	}
+
+	.panel-body {
+		height: 91%;
+	}
+
+	.panel-title {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.panel-body p {
+		text-align: center;
+	}
+
+	img {
+		image-rendering: pixelated;
+	}
+
+	div {
+		flex: 1;
+	}
+}

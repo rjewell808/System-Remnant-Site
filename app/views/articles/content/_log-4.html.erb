@@ -1,0 +1,100 @@
+<div class="row article-section">
+	<h1>Modules</h1>
+	<p>
+		Looking back at the older blogs I realized I never introduced one of the main mechanics: modules! These are equippable stat changers that appear in the world whether in shops, chests, or off enemy corpses. Most of them can be stacked for an increased effect, for instance having multiple damage modules would further increase your damage. Here are a few examples of the possible hundreds to come:
+	</p>
+</div>
+
+<div class="row module-panels">
+	<div class="col-lg-4">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Item Magnet</h3>
+		  </div>
+		  <div class="panel-body">
+		  	<%= image_tag('articles/log-4/mod_magnet.png', class: "width-75-center",alt: "System Remnant module item magnet")%>
+		    <p><i>Let them come to you!</i><br>-</p>
+		    Equipping this module will pull in nearby coins and experience left behind for easy pickup. Simply walk close to the items and have them come to you!
+		  </div>
+		</div>
+	</div>
+	<div class="col-lg-4">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Syntheic Riches</h3>
+		  </div>
+		  <div class="panel-body">
+		  	<%= image_tag('articles/log-4/mod_money.png', class: "width-75-center",alt: "System Remnant module synethic riches")%>
+		    <p><i>Making bank</i><br>-</p>
+		    This module is a good one to pick up early on. It will supply you with coins over time/ Nothing like farming for cash!
+		  </div>
+		</div>
+	</div>
+	<div class="col-lg-4">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Poisonous Cloud</h3>
+		  </div>
+		  <div class="panel-body">
+		  	<%= image_tag('articles/log-4/mod_cloud.png', class: "width-75-center",alt: "System Remnant module poisonous cloud")%>
+		    <p><i>That's gassy</i><br>-</p>
+		    Need a last minute defense for when you’re being attacked? The poisonous cloud is for you! Release a deadly purple gas when you are hurt to damage nearby enemies.
+		  </div>
+		</div>
+	</div>
+</div>
+
+<div class="row article-section">
+	<h1>Weapon Attachments</h1>
+	<p>
+		Time to introduce another core feature of the game: weapon attachments. These essentially change how your weapon will function with stylistic modifiers. From changing your single projectile into multiple bullets to completely changing them into lightning blasts, the weapon attachments are there to change up your playstyle. Additionally, you can equip up to two at a time to create many combinations.
+	</p>
+
+	<p>
+		For instance if you have the Wave attachment, which curves your projectiles in a wave, and the Tri-shot you end up with an effect like this:
+	</p>
+
+	<p>
+		This will hopefully encourage you to try out all the different unique combinations that are possible with each weapon attachment.
+	</p>
+</div>
+
+<div class="row article-section">
+	<h1>HUD Changes</h1>
+	<p>
+		More UI updates? You got it! This time the HUD has been tweaked with a few new features and changes.
+	</p>
+	<%= image_tag('articles/log-4/hud_update.png', class: "",alt: "System Remnant module hud changes")%>
+	<p>
+		Overall the UI elements on the HUD are generally brighter, more vibrant than before. This will help key elements stick out better such as when health is getting low or ammo is out.
+	</p>
+
+	<p>
+		Another small change is the little blank slot in the bottom left corner, here you can hold up to a single CPU boost and choose when to activate it rather than it being used as soon as you pick it up.
+	</p>
+
+	<p>
+		You may have noticed the scrap counter change in the opposite corner, more on that in a bit.
+	</p>
+</div>
+
+<div class="row article-section">
+	<h1>Internal Changes</h1>
+
+	<p>
+		A lot has changed internally since last year, including the recently mentioned modules and how they are added to the game in code. I rewrote the system to be, well, module, allowing for much easier integration for when I want to implement system changing features.
+	</p>
+
+	<p>
+		Another system change has been to the scrap currency as it has now been unified under one currency type just being scrap. This makes handling the currency much easier without having to micro-manage what goes with what.
+	</p>
+
+	<p>
+		That’s about it for this week, thank you for continuing to check out the progress on System Remnant and be sure to check out all the social media for the latest news!
+	</p>
+
+	<p class="center">
+		<a href="https://twitter.com/system_remnant" target="_blank">Twitter </a> &bull;
+		<a href="https://www.facebook.com/SystemRemnant/" target="_blank"> Facebook</a>
+	</p>
+</div>
